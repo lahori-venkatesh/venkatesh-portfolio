@@ -7,8 +7,8 @@ const HeroSection = ({ activeImage, handleMouseMove, images }: {
 }) => (
   <section id="home" className="pt-32 pb-16 px-6 lg:px-12">
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center md:text-left">
+        <div className="space-y-6 max-w-xl mx-auto md:mx-0">
           <h1 className="text-4xl md:text-6xl font-bold font-poppins">
             Hello, I am <span className="text-primary">Venkatesh</span>
           </h1>
@@ -18,13 +18,13 @@ const HeroSection = ({ activeImage, handleMouseMove, images }: {
           <p className="text-lg text-muted-foreground font-poppins">
             Passionate about creating beautiful and functional web applications with a focus on user experience and modern technologies.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center md:justify-start">
             <Button size="lg" className="font-poppins">View Resume</Button>
             <Button size="lg" variant="outline" className="font-poppins">Contact Me</Button>
           </div>
         </div>
-        <div className="relative">
-          <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] mx-auto">
+        <div className="relative flex justify-center">
+          <div className="w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
             <img
               src={images[activeImage]}
               alt="Profile"
