@@ -40,9 +40,7 @@ const DesignFolio = () => {
       <div className="container mx-auto">
         <div className="flex items-center gap-4 mb-8">
           <Link to="/">
-            <Button variant="outline" size="icon" className="hover:bg-primary/10">
-              <ArrowLeft className="h-4 w-4" />
-            </Button>
+            <ArrowLeft className="h-6 w-6 text-foreground hover:text-primary transition-colors" />
           </Link>
           <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Design Portfolio
