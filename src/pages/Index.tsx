@@ -1,6 +1,7 @@
-import { Github } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import Navbar from "@/components/layout/Navbar";
+import HeroSection from "@/components/sections/HeroSection";
+import Footer from "@/components/sections/Footer";
 
 const Index = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -28,59 +29,14 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-accent/10">
-      {/* Navbar */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : ""}`}>
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <span className="text-xl font-bold text-primary">Venkatesh</span>
-            <div className="hidden md:flex space-x-8">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-              <a href="#skills" className="text-foreground hover:text-primary transition-colors">Skills</a>
-              <a href="#projects" className="text-foreground hover:text-primary transition-colors">Projects</a>
-              <a href="#certificates" className="text-foreground hover:text-primary transition-colors">Certificates</a>
-              <a href="#story" className="text-foreground hover:text-primary transition-colors">My Story</a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
-            </div>
-            <Button variant="outline" className="gap-2">
-              <Github className="h-4 w-4" />
-              GitHub
-            </Button>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <section id="home" className="pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-6xl font-bold">
-                Hello, I am <span className="text-primary">Venkatesh</span>
-              </h1>
-              <p className="text-xl text-muted-foreground">
-                UI/UX Designer, Frontend Developer & Full Stack Developer
-              </p>
-              <div className="flex gap-4">
-                <Button size="lg">View Resume</Button>
-                <Button size="lg" variant="outline">Contact Me</Button>
-              </div>
-            </div>
-            <div className="relative" onMouseMove={handleMouseMove}>
-              <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] mx-auto relative animate-image-rotate">
-                <img
-                  src={images[activeImage]}
-                  alt="Profile"
-                  className="rounded-full object-cover w-full h-full shadow-xl"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
+    <div className="min-h-screen bg-gradient-to-br from-background to-accent/10 font-poppins">
+      <Navbar scrolled={scrolled} />
+      <HeroSection 
+        activeImage={activeImage}
+        handleMouseMove={handleMouseMove}
+        images={images}
+      />
+      
       <section id="about" className="py-16 bg-accent/10">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
@@ -256,13 +212,8 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-primary text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>Designed with ❤️ by Venkatesh</p>
-        </div>
-      </footer>
+      
+      <Footer />
     </div>
   );
 };

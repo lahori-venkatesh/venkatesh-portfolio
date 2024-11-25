@@ -18,22 +18,25 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "hsl(222.2 84% 4.9%)",
+        foreground: "hsl(210 40% 98%)",
         primary: {
-          DEFAULT: "#9b87f5",
+          DEFAULT: "#3B82F6",
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#7E69AB",
+          DEFAULT: "#1E40AF",
           foreground: "#ffffff",
         },
         accent: {
-          DEFAULT: "#D6BCFA",
+          DEFAULT: "#60A5FA",
           foreground: "#1A1F2C",
         },
         destructive: {
@@ -41,8 +44,8 @@ export default {
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "hsl(217.2 32.6% 17.5%)",
+          foreground: "hsl(215 20.2% 65.1%)",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -52,23 +55,6 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-      },
-      keyframes: {
-        "image-rotate": {
-          "0%": { transform: "rotate(0deg) translate(0px)" },
-          "25%": { transform: "rotate(90deg) translate(10px)" },
-          "50%": { transform: "rotate(180deg) translate(0px)" },
-          "75%": { transform: "rotate(270deg) translate(-10px)" },
-          "100%": { transform: "rotate(360deg) translate(0px)" },
-        },
-        "slide-up": {
-          "0%": { transform: "translateY(100%)", opacity: "0" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
-        },
-      },
-      animation: {
-        "image-rotate": "image-rotate 20s linear infinite",
-        "slide-up": "slide-up 0.5s ease-out",
       },
     },
   },
