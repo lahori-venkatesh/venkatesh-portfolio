@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => (
-  <section id="contact" className="py-24 px-6 lg:px-12">
-    <div className="container mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+  <section id="contact" className="py-12 md:py-24 px-4 md:px-6 lg:px-12">
+    <div className="container mx-auto max-w-[95%] md:max-w-full">
+      <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
         Contact Me
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <form className="space-y-8 p-8 rounded-lg border border-primary/20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+        <form className="space-y-6 md:space-y-8 p-4 md:p-8 rounded-lg border border-primary/20">
           <div>
             <label className="block text-sm font-medium mb-2">Name</label>
             <input
@@ -34,7 +34,7 @@ const ContactSection = () => (
           </div>
           <Button className="w-full">Send Message</Button>
         </form>
-        <div className="h-[400px] rounded-lg overflow-hidden border border-primary/20">
+        <div className="h-[300px] md:h-[400px] rounded-lg overflow-hidden border border-primary/20">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5997798838537!2d77.5945627!3d12.9715987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sin!4v1645451234567!5m2!1sen!2sin"
             width="100%"
