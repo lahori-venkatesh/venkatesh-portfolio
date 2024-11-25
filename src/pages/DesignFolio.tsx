@@ -63,14 +63,14 @@ const DesignFolio = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
                   <p className="text-muted-foreground mb-4">{study.description}</p>
-                  <div className="flex gap-4">
-                    <a href={study.dribbbleLink} target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" className="gap-2">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <a href={study.dribbbleLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                      <Button variant="outline" className="w-full sm:w-auto gap-2">
                         Dribbble <ExternalLink className="h-4 w-4" />
                       </Button>
                     </a>
-                    <a href={study.mediumLink} target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" className="gap-2">
+                    <a href={study.mediumLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                      <Button variant="outline" className="w-full sm:w-auto gap-2">
                         Medium <ExternalLink className="h-4 w-4" />
                       </Button>
                     </a>
@@ -97,8 +97,8 @@ const DesignFolio = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{design.title}</h3>
                   <p className="text-muted-foreground mb-4">{design.description}</p>
-                  <a href={design.dribbbleLink} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" className="gap-2">
+                  <a href={design.dribbbleLink} target="_blank" rel="noopener noreferrer" className="block">
+                    <Button variant="outline" className="w-full sm:w-auto gap-2">
                       View on Dribbble <ExternalLink className="h-4 w-4" />
                     </Button>
                   </a>
