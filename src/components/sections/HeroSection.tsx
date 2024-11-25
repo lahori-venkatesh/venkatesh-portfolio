@@ -8,9 +8,12 @@ const HeroSection = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 max-w-xl mx-auto md:mx-0 text-center md:text-left order-2 md:order-1">
-            <h1 className="text-4xl md:text-6xl font-bold font-poppins">
-              <span className="text-white text-2xl md:text-3xl">Hello</span>, I am <span className="text-primary">Venkatesh</span>
-            </h1>
+            <div className="space-y-2">
+              <p className="text-white text-2xl md:text-3xl font-bold font-poppins">Hello</p>
+              <h1 className="text-4xl md:text-6xl font-bold font-poppins">
+                I am <span className="text-primary">Venkatesh</span>
+              </h1>
+            </div>
             <div className="space-y-3">
               <p className="text-xl bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text animate-fade-in font-poppins">
                 UI/UX Designer
