@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const DesignFolio = () => {
   const caseStudies = [
@@ -22,9 +23,16 @@ const DesignFolio = () => {
   return (
     <div className="min-h-screen pt-24 pb-16 px-6 lg:px-12">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold mb-8 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Design Portfolio
-        </h1>
+        <div className="flex items-center gap-4 mb-8">
+          <Link to="/">
+            <Button variant="outline" size="icon" className="hover:bg-primary/10">
+              <ArrowLeft className="h-4 w-4" />
+            </Button>
+          </Link>
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Design Portfolio
+          </h1>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {caseStudies.map((study, index) => (
