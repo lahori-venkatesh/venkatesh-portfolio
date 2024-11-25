@@ -9,11 +9,19 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 max-w-xl mx-auto md:mx-0 text-center md:text-left order-2 md:order-1">
             <h1 className="text-4xl md:text-6xl font-bold font-poppins">
-              <span className="text-white">Hello</span>, I am <span className="text-primary">Venkatesh</span>
+              <span className="text-white text-2xl md:text-3xl">Hello</span>, I am <span className="text-primary">Venkatesh</span>
             </h1>
-            <p className="text-xl text-secondary font-poppins">
-              UI/UX Designer, Frontend Developer & Full Stack Developer
-            </p>
+            <div className="space-y-3">
+              <p className="text-xl bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text animate-fade-in font-poppins">
+                UI/UX Designer
+              </p>
+              <p className="text-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-transparent bg-clip-text animate-slide-in-right delay-200 font-poppins">
+                Frontend Developer
+              </p>
+              <p className="text-xl bg-gradient-to-r from-green-500 to-emerald-500 text-transparent bg-clip-text animate-scale-in delay-400 font-poppins">
+                Full Stack Developer
+              </p>
+            </div>
             <p className="text-lg text-secondary font-poppins">
               Passionate about creating beautiful and functional web applications with a focus on user experience and modern technologies.
             </p>
