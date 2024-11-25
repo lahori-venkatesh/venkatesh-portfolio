@@ -9,7 +9,9 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 max-w-xl mx-auto md:mx-0 text-center md:text-left order-2 md:order-1">
             <div className="space-y-2">
-              <p className="text-white text-2xl md:text-3xl font-bold font-poppins">Hello</p>
+              <p className="text-white text-2xl md:text-3xl font-bold font-poppins">
+                Hello <span className="inline-block animate-wave origin-[70%_70%]">👋</span>
+              </p>
               <h1 className="text-4xl md:text-6xl font-bold font-poppins">
                 I am <span className="text-primary">Venkatesh</span>
               </h1>
