@@ -19,18 +19,32 @@ const CertificatesSection = () => {
       organization: "IBM",
       date: "August 2023",
       image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      title: "AWS Cloud Practitioner",
+      organization: "Amazon",
+      date: "July 2023",
+      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      title: "Machine Learning Fundamentals",
+      organization: "Stanford",
+      date: "June 2023",
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
     }
   ];
 
   return (
-    <section id="certificates" className="py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Certificates</h2>
+    <section id="certificates" className="py-16 px-6 lg:px-12">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          Certificates
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((cert, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-300"
+              className="group relative overflow-hidden rounded-lg border border-gradient-to-r from-primary/20 to-accent/20 hover:border-primary/40 transition-all duration-300"
             >
               <div className="aspect-video relative">
                 <img
