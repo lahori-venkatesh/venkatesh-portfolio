@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="relative bg-background py-12">
     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/5" />
     <div className="container mx-auto px-6 lg:px-12 relative">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border border-gradient-to-r from-primary/20 to-accent/20 rounded-lg p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border border-primary/20 rounded-lg p-8">
         <div className="space-y-4">
           <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Venkatesh
@@ -18,7 +18,7 @@ const Footer = () => (
           <h4 className="font-semibold">Quick Links</h4>
           <div className="space-y-2">
             <a href="#about" className="block text-muted-foreground hover:text-primary transition-colors">About</a>
-            <a href="#portfolio" className="block text-muted-foreground hover:text-primary transition-colors">Portfolio</a>
+            <a href="/design-folio" className="block text-muted-foreground hover:text-primary transition-colors">Design Folio</a>
             <a href="#contact" className="block text-muted-foreground hover:text-primary transition-colors">Contact</a>
           </div>
         </div>
