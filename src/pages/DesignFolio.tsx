@@ -20,6 +20,21 @@ const DesignFolio = () => {
     }
   ];
 
+  const myDesigns = [
+    {
+      title: "Mobile App Design",
+      description: "Modern and intuitive mobile application interface design.",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      dribbbleLink: "https://dribbble.com/shots/your-shot-3"
+    },
+    {
+      title: "Web Dashboard",
+      description: "Clean and functional web dashboard interface.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      dribbbleLink: "https://dribbble.com/shots/your-shot-4"
+    }
+  ];
+
   return (
     <div className="min-h-screen pt-24 pb-16 px-6 lg:px-12">
       <div className="container mx-auto">
@@ -34,36 +49,66 @@ const DesignFolio = () => {
           </h1>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {caseStudies.map((study, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-300">
-              <div className="aspect-video relative">
-                <img
-                  src={study.image}
-                  alt={study.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6">Case Studies</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {caseStudies.map((study, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-300">
+                <div className="aspect-video relative">
+                  <img
+                    src={study.image}
+                    alt={study.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
+                  <p className="text-muted-foreground mb-4">{study.description}</p>
+                  <div className="flex gap-4">
+                    <a href={study.dribbbleLink} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" className="gap-2">
+                        Dribbble <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    </a>
+                    <a href={study.mediumLink} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" className="gap-2">
+                        Medium <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
-                <p className="text-muted-foreground mb-4">{study.description}</p>
-                <div className="flex gap-4">
-                  <a href={study.dribbbleLink} target="_blank" rel="noopener noreferrer">
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-6">My Designs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {myDesigns.map((design, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-300">
+                <div className="aspect-video relative">
+                  <img
+                    src={design.image}
+                    alt={design.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{design.title}</h3>
+                  <p className="text-muted-foreground mb-4">{design.description}</p>
+                  <a href={design.dribbbleLink} target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" className="gap-2">
-                      Dribbble <ExternalLink className="h-4 w-4" />
-                    </Button>
-                  </a>
-                  <a href={study.mediumLink} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" className="gap-2">
-                      Medium <ExternalLink className="h-4 w-4" />
+                      View on Dribbble <ExternalLink className="h-4 w-4" />
                     </Button>
                   </a>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );
