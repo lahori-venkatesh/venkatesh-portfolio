@@ -4,18 +4,21 @@ import { Link } from "react-router-dom";
 const projects = [
   {
     title: "E-commerce Platform",
+    description: "A modern e-commerce solution with real-time inventory management",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     tools: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
     link: "/projects/ecommerce"
   },
   {
     title: "AI-Powered Analytics",
+    description: "Data analytics platform with machine learning capabilities",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     tools: ["Python", "TensorFlow", "React", "AWS"],
     link: "/projects/analytics"
   },
   {
     title: "Healthcare Dashboard",
+    description: "Real-time patient monitoring system",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     tools: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
     link: "/projects/healthcare"
@@ -45,6 +48,7 @@ const ProjectsSection = () => {
               </div>
               <div className="p-6 space-y-4">
                 <h3 className="text-xl font-semibold font-poppins">{project.title}</h3>
+                <p className="text-muted-foreground text-sm">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tools.map((tool, toolIndex) => (
                     <span
