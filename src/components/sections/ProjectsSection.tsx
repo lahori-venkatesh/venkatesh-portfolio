@@ -24,16 +24,16 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-12">
+    <section className="py-8">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center font-poppins">
+        <h2 className="text-2xl font-semibold mb-6 text-center font-poppins">
           Featured Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-300 bg-background/50 backdrop-blur-sm"
+              className="group bg-background/50 backdrop-blur-sm rounded-lg overflow-hidden border border-primary/10 hover:border-primary/20 transition-all duration-300"
             >
               <div className="aspect-video relative">
                 <img
@@ -41,22 +41,21 @@ const ProjectsSection = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
               </div>
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-semibold font-poppins">{project.title}</h3>
-                <div className="flex flex-wrap gap-2">
+              <div className="p-4 space-y-3">
+                <h3 className="text-lg font-medium font-poppins">{project.title}</h3>
+                <div className="flex flex-wrap gap-1.5">
                   {project.tools.map((tool, toolIndex) => (
                     <span
                       key={toolIndex}
-                      className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary"
+                      className="px-2 py-0.5 text-xs rounded-full bg-primary/5 text-primary/80"
                     >
                       {tool}
                     </span>
                   ))}
                 </div>
                 <Link to={project.link}>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="ghost" className="w-full mt-2 text-sm">
                     View Project
                   </Button>
                 </Link>
