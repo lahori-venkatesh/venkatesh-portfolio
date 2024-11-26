@@ -4,18 +4,21 @@ import { Link } from "react-router-dom";
 const projects = [
   {
     title: "E-commerce Platform",
+    description: "A modern e-commerce platform built with React and Node.js, featuring real-time inventory management, secure payment processing, and a responsive design for optimal user experience.",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     tools: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
     link: "/projects/ecommerce"
   },
   {
     title: "AI-Powered Analytics",
+    description: "Advanced analytics platform leveraging artificial intelligence to provide actionable insights from complex datasets, featuring interactive visualizations and predictive modeling capabilities.",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     tools: ["Python", "TensorFlow", "React", "AWS"],
     link: "/projects/analytics"
   },
   {
     title: "Healthcare Dashboard",
+    description: "Comprehensive healthcare management dashboard enabling medical professionals to monitor patient data, track treatments, and analyze health trends in real-time.",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     tools: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
     link: "/projects/healthcare"
@@ -24,10 +27,10 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-8">
+    <section className="py-0">
       <div className="container mx-auto">
         <h2 className="text-2xl font-semibold mb-6 text-center font-poppins">
-          Featured Projects
+          My Work
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project, index) => (
@@ -44,6 +47,9 @@ const ProjectsSection = () => {
               </div>
               <div className="p-4 space-y-3">
                 <h3 className="text-lg font-medium font-poppins">{project.title}</h3>
+                <p className="text-sm text-muted-foreground line-clamp-3">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-1.5">
                   {project.tools.map((tool, toolIndex) => (
                     <span
