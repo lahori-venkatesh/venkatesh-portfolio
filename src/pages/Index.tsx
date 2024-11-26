@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import Navbar from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import SkillsSection from "@/components/sections/SkillsSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
 import CertificatesSection from "@/components/sections/CertificatesSection";
 import StorySection from "@/components/sections/StorySection";
 import ContactSection from "@/components/sections/ContactSection";
@@ -24,6 +24,7 @@ const Index = () => {
       <Navbar scrolled={scrolled} />
       <HeroSection />
       <SkillsSection />
+      <ProjectsSection />
       <CertificatesSection />
       <StorySection />
       <ContactSection />
