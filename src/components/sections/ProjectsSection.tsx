@@ -22,12 +22,19 @@ const projects = [
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     tools: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
     link: "/projects/healthcare"
+  },
+  {
+    title: "Social Media Platform",
+    description: "A feature-rich social media platform with real-time messaging, post sharing, and user engagement analytics. Built with modern technologies for optimal performance and scalability.",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    tools: ["Next.js", "Firebase", "TypeScript", "Redux"],
+    link: "/projects/social-media"
   }
 ];
 
 const ProjectsSection = () => {
   return (
-    <section className="py-0">
+    <section className="py-0 -mt-16">
       <div className="container mx-auto">
         <h2 className="text-2xl font-semibold mb-6 text-center font-poppins">
           My Work
