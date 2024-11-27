@@ -4,7 +4,7 @@ const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-8 pb-8 px-4 md:px-6 lg:px-12">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-4 pb-4 px-4 md:px-6 lg:px-12">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 max-w-xl mx-auto md:mx-0 text-center md:text-left order-2 md:order-1">
