@@ -25,12 +25,13 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Skills</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">My Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg border border-primary/20 ${skill.bgColor} backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg`}
+              className={`p-6 rounded-lg border border-primary/20 ${skill.bgColor} backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg animate-fade-in`}
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-center gap-4 mb-4">
                 {skill.icon}

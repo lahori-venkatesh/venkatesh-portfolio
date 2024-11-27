@@ -28,7 +28,7 @@ export default {
         "scale-in": "scaleIn 0.5s ease-in forwards",
         "wave": "wave 2s linear infinite",
         "gradient-x": "gradient-x 15s ease infinite",
-        "twinkle": "twinkle 3s ease-in-out infinite",
+        "twinkle": "twinkle 1.5s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -64,8 +64,9 @@ export default {
           }
         },
         twinkle: {
-          '0%, 100%': { opacity: '0' },
-          '50%': { opacity: '0.8' },
+          '0%': { opacity: '0', transform: 'scale(0.8)' },
+          '50%': { opacity: '1', transform: 'scale(1.2)' },
+          '100%': { opacity: '0', transform: 'scale(0.8)' },
         },
       },
       colors: {

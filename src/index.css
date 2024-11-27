@@ -68,11 +68,12 @@
 
 @layer components {
   .star {
-    @apply absolute w-0.5 h-0.5 bg-white rounded-full opacity-0;
+    @apply absolute w-1 h-1 bg-white rounded-full opacity-0;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.6);
   }
   
   .stars-container {
-    @apply absolute inset-0 overflow-hidden;
+    @apply absolute inset-0 overflow-hidden pointer-events-none;
   }
 }
 
