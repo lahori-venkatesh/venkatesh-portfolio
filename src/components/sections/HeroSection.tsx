@@ -9,6 +9,21 @@ const HeroSection = () => {
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
+        
+        {/* Stars */}
+        <div className="stars-container">
+          {[...Array(50)].map((_, i) => (
+            <div 
+              key={i} 
+              className="star animate-twinkle"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 3}s`
+              }}
+            />
+          ))}
+        </div>
       </div>
       
       <div className="container mx-auto">

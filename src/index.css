@@ -66,6 +66,16 @@
   }
 }
 
+@layer components {
+  .star {
+    @apply absolute w-0.5 h-0.5 bg-white rounded-full opacity-0;
+  }
+  
+  .stars-container {
+    @apply absolute inset-0 overflow-hidden;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

@@ -34,7 +34,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-0 -mt-16">
+    <section className="py-16">
       <div className="container mx-auto">
         <h2 className="text-2xl font-semibold mb-6 text-center font-poppins">
           My Work

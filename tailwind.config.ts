@@ -26,6 +26,9 @@ export default {
         "fade-in": "fadeIn 0.5s ease-in forwards",
         "slide-in-right": "slideInRight 0.5s ease-in forwards",
         "scale-in": "scaleIn 0.5s ease-in forwards",
+        "wave": "wave 2s linear infinite",
+        "gradient-x": "gradient-x 15s ease infinite",
+        "twinkle": "twinkle 3s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -39,6 +42,30 @@ export default {
         scaleIn: {
           '0%': { transform: 'scale(0.5)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        wave: {
+          '0%': { transform: 'rotate(0deg)' },
+          '10%': { transform: 'rotate(14deg)' },
+          '20%': { transform: 'rotate(-8deg)' },
+          '30%': { transform: 'rotate(14deg)' },
+          '40%': { transform: 'rotate(-4deg)' },
+          '50%': { transform: 'rotate(10deg)' },
+          '60%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+        'gradient-x': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        },
+        twinkle: {
+          '0%, 100%': { opacity: '0' },
+          '50%': { opacity: '0.8' },
         },
       },
       colors: {
