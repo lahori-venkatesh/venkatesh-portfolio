@@ -27,6 +27,7 @@ export default {
         "slide-in-right": "slideInRight 0.5s ease-in forwards",
         "scale-in": "scaleIn 0.5s ease-in forwards",
         "wave": "wave 2s linear infinite",
+        "gradient-x": "gradient-x 15s ease infinite",
       },
       keyframes: {
         fadeIn: {
@@ -50,6 +51,16 @@ export default {
           '50%': { transform: 'rotate(10deg)' },
           '60%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(0deg)' },
+        },
+        'gradient-x': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
         },
       },
       colors: {

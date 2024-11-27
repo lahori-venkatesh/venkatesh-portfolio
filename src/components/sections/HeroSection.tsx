@@ -4,7 +4,13 @@ const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-4 pb-4 px-4 md:px-6 lg:px-12">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-4 pb-4 px-4 md:px-6 lg:px-12 overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
+        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
+      </div>
+      
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 max-w-xl mx-auto md:mx-0 text-center md:text-left order-2 md:order-1">
