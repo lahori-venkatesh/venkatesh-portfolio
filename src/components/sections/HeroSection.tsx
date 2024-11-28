@@ -52,7 +52,7 @@ const HeroSection = () => {
             <p className="text-lg text-secondary font-poppins">
               Passionate about creating beautiful and functional web applications with a focus on user experience and modern technologies.
             </p>
-            <div className="flex gap-4 justify-center md:justify-start">
+            <div className="flex flex-col items-center gap-4">
               <Button size="lg" className="font-poppins">View Resume</Button>
               <div className="flex items-center gap-4">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">

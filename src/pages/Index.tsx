@@ -22,12 +22,14 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-accent/10 font-poppins">
       <Navbar scrolled={scrolled} />
-      <HeroSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <CertificatesSection />
-      <StorySection />
-      <ContactSection />
+      <div className="px-2 sm:px-4">
+        <HeroSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <CertificatesSection />
+        <StorySection />
+        <ContactSection />
+      </div>
       <Footer />
     </div>
   );
