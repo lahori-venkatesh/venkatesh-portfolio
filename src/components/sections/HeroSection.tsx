@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { Linkedin, Instagram, Youtube } from "lucide-react";
 
 const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-4 pb-4 px-4 md:px-6 lg:px-12 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-4 pb-4 px-2 md:px-4 lg:px-8 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
@@ -53,7 +54,17 @@ const HeroSection = () => {
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
               <Button size="lg" className="font-poppins">View Resume</Button>
-              <Button size="lg" variant="outline" className="font-poppins">Contact Me</Button>
+              <div className="flex items-center gap-4">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">
+                  <Instagram className="w-6 h-6" />
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">
+                  <Youtube className="w-6 h-6" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="relative flex justify-center order-1 md:order-2 pt-8">

@@ -23,7 +23,7 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="py-8 sm:py-16 px-4 sm:px-6 lg:px-12">
+    <section id="skills" className="py-8 sm:py-16 px-2 sm:px-4 lg:px-8">
       <div className="container mx-auto max-w-[92%] md:max-w-full">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           My Skills

@@ -2,40 +2,40 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
-const projects = [
-  {
-    title: "E-commerce Platform",
-    description: "A modern e-commerce platform built with React and Node.js, featuring real-time inventory management, secure payment processing, and a responsive design for optimal user experience.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    tools: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    link: "/projects/ecommerce"
-  },
-  {
-    title: "AI-Powered Analytics",
-    description: "Advanced analytics platform leveraging artificial intelligence to provide actionable insights from complex datasets, featuring interactive visualizations and predictive modeling capabilities.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    tools: ["Python", "TensorFlow", "React", "AWS"],
-    link: "/projects/analytics"
-  },
-  {
-    title: "Healthcare Dashboard",
-    description: "Comprehensive healthcare management dashboard enabling medical professionals to monitor patient data, track treatments, and analyze health trends in real-time.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    tools: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
-    link: "/projects/healthcare"
-  },
-  {
-    title: "Social Media Platform",
-    description: "A feature-rich social media platform with real-time messaging, post sharing, and user engagement analytics. Built with modern technologies for optimal performance and scalability.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    tools: ["Next.js", "Firebase", "TypeScript", "Redux"],
-    link: "/projects/social-media"
-  }
-];
+  const projects = [
+    {
+      title: "E-commerce Platform",
+      description: "A modern e-commerce platform built with React and Node.js, featuring real-time inventory management, secure payment processing, and a responsive design for optimal user experience.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      tools: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      link: "/projects/ecommerce"
+    },
+    {
+      title: "AI-Powered Analytics",
+      description: "Advanced analytics platform leveraging artificial intelligence to provide actionable insights from complex datasets, featuring interactive visualizations and predictive modeling capabilities.",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      tools: ["Python", "TensorFlow", "React", "AWS"],
+      link: "/projects/analytics"
+    },
+    {
+      title: "Healthcare Dashboard",
+      description: "Comprehensive healthcare management dashboard enabling medical professionals to monitor patient data, track treatments, and analyze health trends in real-time.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      tools: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
+      link: "/projects/healthcare"
+    },
+    {
+      title: "Social Media Platform",
+      description: "A feature-rich social media platform with real-time messaging, post sharing, and user engagement analytics. Built with modern technologies for optimal performance and scalability.",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      tools: ["Next.js", "Firebase", "TypeScript", "Redux"],
+      link: "/projects/social-media"
+    }
+  ];
 
   return (
-    <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-12">
-      <div className="container mx-auto max-w-[92%] md:max-w-full">
+    <section className="py-8 sm:py-16 px-2 sm:px-4 lg:px-8">
+      <div className="container mx-auto max-w-[96%] md:max-w-full">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           My Work
         </h2>
