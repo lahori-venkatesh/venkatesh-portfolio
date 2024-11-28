@@ -22,7 +22,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-accent/10 font-poppins">
       <Navbar scrolled={scrolled} />
-      <div className="px-2 sm:px-4">
+      <div className="container mx-auto px-6 lg:px-12">
         <HeroSection />
         <SkillsSection />
         <ProjectsSection />
