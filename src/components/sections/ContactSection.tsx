@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => (
-  <section id="contact" className="py-8 md:py-24 px-3 md:px-6 lg:px-12">
+  <section id="contact" className="py-8 sm:py-24 px-4 sm:px-6 lg:px-12">
     <div className="container mx-auto max-w-[92%] md:max-w-full">
-      <h2 className="text-3xl font-bold text-center mb-6 md:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
         Contact Me
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12">
