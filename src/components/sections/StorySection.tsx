@@ -26,7 +26,7 @@ const StorySection = () => {
 
   return (
     <section id="story" className="py-16 md:py-20 bg-accent/10">
-      <div className="w-full max-w-[92%] md:max-w-full mx-auto px-4">
+      <div className="w-full">
         <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 text-primary">My Story</h2>
         <div className="max-w-4xl mx-auto">
           <div className="relative space-y-6 md:space-y-8">
