@@ -23,21 +23,21 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="py-8 sm:py-16 px-2 sm:px-4 lg:px-8">
-      <div className="container mx-auto max-w-[92%] md:max-w-full">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+    <section id="skills" className="py-8 md:py-16">
+      <div className="max-w-[92%] md:max-w-full mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           My Skills
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg border border-primary/20 ${skill.bgColor} backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg animate-fade-in`}
+              className={`p-4 md:p-6 rounded-lg border border-primary/20 ${skill.bgColor} backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg animate-fade-in`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-center gap-4 mb-4">
                 {skill.icon}
-                <h3 className="text-xl font-bold text-primary">{skill.category}</h3>
+                <h3 className="text-lg md:text-xl font-bold text-primary">{skill.category}</h3>
               </div>
               <ul className="space-y-2">
                 {skill.items.map((item, idx) => (
