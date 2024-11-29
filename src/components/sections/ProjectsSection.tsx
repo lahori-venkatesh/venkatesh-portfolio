@@ -34,12 +34,12 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-8 sm:py-16 px-2 sm:px-4 lg:px-8">
-      <div className="container mx-auto max-w-[96%] md:max-w-full">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+    <section className="py-16 md:py-20">
+      <div className="w-full max-w-[92%] md:max-w-full mx-auto px-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           My Work
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}

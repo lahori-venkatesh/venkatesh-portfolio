@@ -5,7 +5,7 @@ const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-4 pb-4 px-2 md:px-4 lg:px-8 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center py-16 md:py-20">
       {/* Animated background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
@@ -27,7 +27,7 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="container mx-auto">
+      <div className="w-full max-w-[92%] md:max-w-full mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 max-w-xl mx-auto md:mx-0 text-center md:text-left order-2 md:order-1">
             <div className="space-y-2">

@@ -25,11 +25,11 @@ const StorySection = () => {
   ];
 
   return (
-    <section id="story" className="py-16 bg-accent/10">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-primary">My Story</h2>
+    <section id="story" className="py-16 md:py-20 bg-accent/10">
+      <div className="w-full max-w-[92%] md:max-w-full mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 text-primary">My Story</h2>
         <div className="max-w-4xl mx-auto">
-          <div className="relative space-y-8">
+          <div className="relative space-y-6 md:space-y-8">
             {stories.map((story, index) => (
               <div
                 key={index}
