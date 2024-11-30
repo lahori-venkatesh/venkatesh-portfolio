@@ -9,11 +9,9 @@ const Navbar = ({ scrolled }: { scrolled: boolean }) => {
 
   const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
     { href: "/design-folio", label: "Design Folio" },
-    { href: "#certificates", label: "Certificates" },
     { href: "#story", label: "My Story" },
     { href: "#contact", label: "Contact" },
   ];

@@ -5,9 +5,9 @@ const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center py-16 md:py-20">
+    <section id="home" className="relative min-h-screen w-full">
       {/* Animated background */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 w-full">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
         
@@ -27,7 +27,7 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="w-full">
+      <div className="w-full md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 max-w-xl mx-auto md:mx-0 text-center md:text-left order-2 md:order-1">
             <div className="space-y-2">
@@ -52,7 +52,7 @@ const HeroSection = () => {
             <p className="text-lg text-secondary font-poppins">
               Passionate about creating beautiful and functional web applications with a focus on user experience and modern technologies.
             </p>
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
               <Button size="lg" className="font-poppins">View Resume</Button>
               <div className="flex items-center gap-4">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">
