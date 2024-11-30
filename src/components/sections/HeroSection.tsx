@@ -27,7 +27,7 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="container mx-auto md:mr-0">
+      <div className="w-full px-0 mt-8 md:container md:mx-auto md:mr-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 text-center md:text-left order-2 md:order-1">
             <div className="space-y-2">
