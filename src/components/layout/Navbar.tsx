@@ -13,7 +13,7 @@ const Navbar = ({ scrolled }: { scrolled: boolean }) => {
     { href: "#projects", label: "Projects" },
     { href: "/design-folio", label: "Design Folio" },
     { href: "#story", label: "My Story" },
-    { href: "#contact", label: "Contact" },
+    { href: "#contact", label: "Contact Me" },
   ];
 
   const socialLinks = {
