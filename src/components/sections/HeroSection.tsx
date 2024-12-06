@@ -28,7 +28,7 @@ const HeroSection = () => {
       </div>
       
       <div className="w-full">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
             <div className="space-y-6 text-center md:text-left order-2 md:order-1">
               <div className="space-y-2">
