@@ -68,7 +68,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="relative flex justify-center order-1 md:order-2 pt-8">
+            <div className="relative flex justify-center md:justify-end order-1 md:order-2 pt-8">
               <div className="relative w-[250px] h-[250px] md:w-[400px] md:h-[400px]">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 animate-spin-slow"></div>
                 <div className="absolute inset-[3px] rounded-full bg-background"></div>
