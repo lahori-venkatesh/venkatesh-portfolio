@@ -5,14 +5,14 @@ const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden flex items-center justify-center pt-20 md:pt-0">
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center pt-20 md:pt-0">
       {/* Animated background */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
+      <div className="absolute inset-0 w-screen -z-10">
+        <div className="absolute inset-0 w-screen bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
+        <div className="absolute inset-0 w-screen bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
         
         {/* Stars */}
-        <div className="stars-container">
+        <div className="stars-container w-screen">
           {[...Array(50)].map((_, i) => (
             <div 
               key={i} 
@@ -28,7 +28,7 @@ const HeroSection = () => {
       </div>
       
       <div className="w-full">
-        <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6 text-center md:text-left order-2 md:order-1">
               <div className="space-y-2">
