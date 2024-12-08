@@ -54,7 +54,7 @@ const CertificatesSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
               </div>
-              <div className="p-6">
+              <div className="p-6 bg-background/80 backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-2">
                   <Award className="w-5 h-5 text-primary" />
                   <h3 className="text-lg font-semibold">{cert.title}</h3>
