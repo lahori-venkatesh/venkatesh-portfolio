@@ -6,19 +6,19 @@ const SkillsSection = () => {
       category: "Frontend Development",
       icon: <Code2 className="w-8 h-8 text-primary" />,
       items: ["React.js", "TypeScript", "Tailwind CSS", "Next.js"],
-      bgColor: "bg-blue-50/5"
+      bgColor: "bg-background/40"
     },
     {
       category: "UI/UX Design",
       icon: <Palette className="w-8 h-8 text-primary" />,
       items: ["Figma", "Adobe XD", "Prototyping", "User Research"],
-      bgColor: "bg-purple-50/5"
+      bgColor: "bg-background/40"
     },
     {
       category: "Full Stack",
       icon: <Database className="w-8 h-8 text-primary" />,
       items: ["Node.js", "MongoDB", "Express.js", "REST APIs"],
-      bgColor: "bg-green-50/5"
+      bgColor: "bg-background/40"
     }
   ];
 

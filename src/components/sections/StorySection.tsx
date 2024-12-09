@@ -25,7 +25,7 @@ const StorySection = () => {
   ];
 
   return (
-    <section id="story" className="relative w-screen left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] bg-gradient-to-br from-background via-accent/5 to-background/90">
+    <section id="story" className="relative w-screen left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] bg-gradient-to-br from-background via-background/95 to-background">
       <div className="py-16 md:py-20">
         <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 text-primary">My Story</h2>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +38,7 @@ const StorySection = () => {
                 <div className="absolute -left-3 top-0 bg-background p-1 rounded-full border-2 border-primary">
                   {story.icon}
                 </div>
-                <div className="bg-white/5 p-6 rounded-lg border border-primary/20">
+                <div className="bg-background/40 backdrop-blur-sm p-6 rounded-lg border border-primary/20">
                   <h3 className="text-xl font-bold mb-2 text-primary">{story.title}</h3>
                   <p className="text-muted-foreground">{story.content}</p>
                 </div>
