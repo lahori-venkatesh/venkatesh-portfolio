@@ -39,14 +39,16 @@ const SkillsSection = () => {
                 {skill.icon}
                 <h3 className="text-lg md:text-xl font-bold text-primary">{skill.category}</h3>
               </div>
-              <ul className="space-y-2">
+              <div className="flex flex-wrap gap-2">
                 {skill.items.map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-primary/60" />
+                  <span
+                    key={idx}
+                    className="px-3 py-1 rounded-full text-sm bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 transition-colors"
+                  >
                     {item}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>
