@@ -28,7 +28,7 @@ const HeroSection = () => {
       </div>
       
       <div className="w-full">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6 text-center md:text-left order-2 md:order-1">
               <div className="space-y-2">
@@ -50,7 +50,7 @@ const HeroSection = () => {
                   Full Stack Developer
                 </p>
               </div>
-              <p className="text-lg text-secondary font-poppins">
+              <p className="text-base md:text-lg text-secondary font-poppins">
                 Passionate about creating beautiful and functional web applications with a focus on user experience and modern technologies.
               </p>
               <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
