@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => (
-  <section id="contact" className="py-8 sm:py-24 bg-[#1A1F2C]">
+  <section id="contact" className="py-8 sm:py-24 bg-[#0A192F]">
     <div className="container mx-auto">
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
         Contact Me
