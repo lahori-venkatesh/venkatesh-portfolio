@@ -43,7 +43,7 @@ const SkillsSection = () => {
                 {skill.items.map((item, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 rounded-full text-sm bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 transition-colors"
+                    className="px-3 py-1 rounded-full text-sm bg-primary/10 border border-primary/30 text-white hover:bg-primary/20 transition-colors"
                   >
                     {item}
                   </span>
