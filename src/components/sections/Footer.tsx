@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border border-primary/20 rounded-lg p-8">
         <div className="space-y-4 text-center md:text-left">
           <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Venkatesh
+            Lahori Venkatesh
           </h3>
           <p className="text-muted-foreground">
             Creating beautiful and functional web experiences with passion and precision.
