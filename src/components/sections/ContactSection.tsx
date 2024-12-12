@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => (
-  <section id="contact" className="py-8 sm:py-24 bg-[#0A192F]">
+  <section id="contact" className="py-8 sm:py-24">
     <div className="container mx-auto">
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
         Contact Me
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12">
-        <form className="space-y-4 md:space-y-8 p-3 md:p-8 rounded-lg border border-primary/20 w-full sm:w-[90%] mx-auto">
+        <form className="space-y-4 md:space-y-8 p-3 md:p-8 rounded-lg border border-primary/20 w-full sm:w-[90%] mx-auto bg-[#0A192F]">
           <div>
             <label className="block text-sm font-medium mb-2">Name</label>
             <input
