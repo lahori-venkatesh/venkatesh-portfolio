@@ -57,7 +57,7 @@ const HeroSection = () => {
                 ]}
                 wrapper="span"
                 speed={50}
-                className="text-xl md:text-2xl font-poppins"
+                className="text-xl md:text-2xl font-poppins gradient-text"
                 repeat={Infinity}
                 style={{
                   display: 'inline-block'
@@ -97,30 +97,32 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Gradient text overlays */}
-      <style jsx>{`
-        .TypeAnimation-module_type-animation__cursor__iDLYk {
-          display: none !important;
-        }
-        
-        .text-xl.md\\:text-2xl:nth-of-type(3n + 1) {
-          background: linear-gradient(to right, #EC4899, #8B5CF6);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        
-        .text-xl.md\\:text-2xl:nth-of-type(3n + 2) {
-          background: linear-gradient(to right, #3B82F6, #10B981);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        
-        .text-xl.md\\:text-2xl:nth-of-type(3n + 3) {
-          background: linear-gradient(to right, #F59E0B, #EF4444);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      `}</style>
+      {/* Gradient text styles */}
+      <style>
+        {`
+          .TypeAnimation-module_type-animation__cursor__iDLYk {
+            display: none !important;
+          }
+          
+          .gradient-text:nth-of-type(3n + 1) {
+            background: linear-gradient(to right, #EC4899, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          
+          .gradient-text:nth-of-type(3n + 2) {
+            background: linear-gradient(to right, #3B82F6, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          
+          .gradient-text:nth-of-type(3n + 3) {
+            background: linear-gradient(to right, #F59E0B, #EF4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        `}
+      </style>
     </section>
   );
 };
