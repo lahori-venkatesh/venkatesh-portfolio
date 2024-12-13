@@ -60,15 +60,9 @@ const HeroSection = () => {
                 className="text-xl md:text-2xl font-poppins"
                 repeat={Infinity}
                 style={{
-                  background: ({ sequence }) => {
-                    if (sequence.includes('UI/UX Designer')) return 'linear-gradient(to right, #EC4899, #8B5CF6)';
-                    if (sequence.includes('Frontend Developer')) return 'linear-gradient(to right, #3B82F6, #10B981)';
-                    return 'linear-gradient(to right, #F59E0B, #EF4444)';
-                  },
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
                   display: 'inline-block'
                 }}
+                cursor={true}
               />
             </div>
             <p className="text-base md:text-lg text-secondary font-poppins -mt-2">
@@ -102,6 +96,31 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Gradient text overlays */}
+      <style jsx>{`
+        .TypeAnimation-module_type-animation__cursor__iDLYk {
+          display: none !important;
+        }
+        
+        .text-xl.md\\:text-2xl:nth-of-type(3n + 1) {
+          background: linear-gradient(to right, #EC4899, #8B5CF6);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
+        .text-xl.md\\:text-2xl:nth-of-type(3n + 2) {
+          background: linear-gradient(to right, #3B82F6, #10B981);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
+        .text-xl.md\\:text-2xl:nth-of-type(3n + 3) {
+          background: linear-gradient(to right, #F59E0B, #EF4444);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      `}</style>
     </section>
   );
 };
