@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => (
   <footer className="relative bg-background py-12">
@@ -51,7 +51,7 @@ const Footer = () => (
               <Instagram className="h-5 w-5 text-primary" />
             </a>
             <a href="#" className="p-2 rounded-full border border-primary/20 hover:border-primary/40 transition-colors">
-              <Mail className="h-5 w-5 text-primary" />
+              <Twitter className="h-5 w-5 text-primary" />
             </a>
           </div>
         </div>
