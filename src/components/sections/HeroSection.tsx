@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Linkedin, Instagram, Youtube } from "lucide-react";
+import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
@@ -39,16 +40,21 @@ const HeroSection = () => {
                   I am <span className="text-primary">Venkatesh</span>
                 </h1>
               </div>
-              <div className="space-y-3">
-                <p className="text-xl bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text animate-fade-in font-poppins">
-                  UI/UX Designer
-                </p>
-                <p className="text-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-transparent bg-clip-text animate-slide-in-right delay-200 font-poppins">
-                  Frontend Developer
-                </p>
-                <p className="text-xl bg-gradient-to-r from-green-500 to-emerald-500 text-transparent bg-clip-text animate-scale-in delay-400 font-poppins">
-                  Full Stack Developer
-                </p>
+              <div className="h-24 md:h-32">
+                <TypeAnimation
+                  sequence={[
+                    'a UI/UX Designer',
+                    2000,
+                    'a Frontend Developer',
+                    2000,
+                    'a Full Stack Developer',
+                    2000,
+                  ]}
+                  wrapper="p"
+                  speed={50}
+                  className="text-xl bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text animate-fade-in font-poppins"
+                  repeat={Infinity}
+                />
               </div>
               <p className="text-base md:text-lg text-secondary font-poppins">
                 Passionate about creating beautiful and functional web applications with a focus on user experience and modern technologies.
