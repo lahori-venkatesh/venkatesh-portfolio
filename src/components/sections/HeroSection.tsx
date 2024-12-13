@@ -43,17 +43,29 @@ const HeroSection = () => {
               <div className="h-24 md:h-32">
                 <TypeAnimation
                   sequence={[
+                    'a ',
+                    1,
                     'a UI/UX Designer',
                     2000,
+                    'a ',
+                    1,
                     'a Frontend Developer',
                     2000,
+                    'a ',
+                    1,
                     'a Full Stack Developer',
                     2000,
                   ]}
-                  wrapper="p"
+                  wrapper="span"
                   speed={50}
-                  className="text-xl bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text animate-fade-in font-poppins"
+                  className="text-xl font-poppins"
                   repeat={Infinity}
+                  style={{
+                    background: 'linear-gradient(to right, #8B5CF6, #D946EF)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    display: 'inline-block'
+                  }}
                 />
               </div>
               <p className="text-base md:text-lg text-secondary font-poppins">
