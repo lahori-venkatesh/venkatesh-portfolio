@@ -6,7 +6,7 @@ const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
   return (
-    <section className="relative min-h-screen w-screen overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-screen w-screen overflow-hidden flex items-center justify-center pt-20 md:pt-0">
       {/* Animated background */}
       <div className="fixed inset-0 w-screen -z-10">
         <div className="absolute inset-0 w-screen bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
