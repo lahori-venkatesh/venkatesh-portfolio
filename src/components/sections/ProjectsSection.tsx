@@ -34,16 +34,16 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="my-10">
-      <div className="w-full max-w-[92%] md:max-w-full mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+    <section className="py-16 md:py-24 bg-[#0A192F]">
+      <div className="w-full max-w-[92%] md:max-w-full mx-auto px-4 sm:px-6 md:px-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 bg-gradient-to-r from-[#64FFDA] to-[#00B4D8] bg-clip-text text-transparent">
           My Work
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-background/50 backdrop-blur-sm rounded-lg overflow-hidden border border-primary/10 hover:border-primary/20 transition-all duration-300"
+              className="group bg-[#112240] rounded-lg overflow-hidden border border-[#64FFDA]/10 hover:border-[#64FFDA]/30 transition-all duration-300"
             >
               <div className="aspect-video relative">
                 <img
@@ -51,24 +51,28 @@ const ProjectsSection = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-[#0A192F]/60 group-hover:bg-[#0A192F]/40 transition-colors duration-300"></div>
               </div>
-              <div className="p-4 space-y-3">
-                <h3 className="text-lg font-medium font-poppins">{project.title}</h3>
-                <p className="text-sm text-muted-foreground line-clamp-3">
+              <div className="p-6 space-y-4">
+                <h3 className="text-lg font-medium font-poppins text-[#E6F1FF]">{project.title}</h3>
+                <p className="text-sm text-[#8892B0] line-clamp-3">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {project.tools.map((tool, toolIndex) => (
                     <span
                       key={toolIndex}
-                      className="px-2 py-0.5 text-xs rounded-full bg-primary/5 text-primary/80"
+                      className="px-3 py-1 text-xs rounded-full bg-[#64FFDA]/10 text-[#64FFDA] border border-[#64FFDA]/20"
                     >
                       {tool}
                     </span>
                   ))}
                 </div>
                 <Link to={project.link}>
-                  <Button variant="ghost" className="w-full mt-2 text-sm">
+                  <Button 
+                    variant="ghost" 
+                    className="w-full mt-4 text-sm border border-[#64FFDA] text-[#64FFDA] hover:bg-[#64FFDA]/10"
+                  >
                     View Project
                   </Button>
                 </Link>
