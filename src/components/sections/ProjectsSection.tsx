@@ -67,8 +67,11 @@ const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
-                <Link to={project.link}>
-                  <Button variant="ghost" className="w-full mt-2 text-sm">
+                <Link to={project.link} className="block md:inline-block">
+                  <Button 
+                    variant="ghost" 
+                    className="w-full mt-2 text-sm md:bg-transparent md:hover:bg-accent md:hover:text-accent-foreground bg-[#0F76F4] text-white hover:bg-[#0F76F4]/90 md:text-foreground"
+                  >
                     View Project
                   </Button>
                 </Link>
