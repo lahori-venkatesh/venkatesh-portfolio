@@ -24,15 +24,15 @@ const SkillsSection = () => {
 
   return (
     <section id="skills" className="py-8 md:py-16">
-      <div className="max-w-[92%] md:max-w-full mx-auto px-4">
+      <div className="max-w-[92%] md:max-w-full mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           My Skills
         </h2>
-        <div className="flex flex-col md:flex-row gap-6 items-center md:items-stretch justify-center flex-wrap">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="w-[352px] p-6 rounded-lg border border-[#0FA0CE]/80 backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg animate-fade-in"
+              className={`p-4 md:p-6 rounded-lg border border-primary/20 ${skill.bgColor} backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg animate-fade-in`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-center gap-4 mb-4">
