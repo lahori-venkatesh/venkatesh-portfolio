@@ -6,14 +6,14 @@ const HeroSection = () => {
   const profileImage = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center pt-20 px-4 sm:px-6 md:pt-0 md:px-8 bg-[#0A192F]">
+    <section className="relative min-h-screen w-screen overflow-hidden flex items-center justify-center pt-20 px-6 md:pt-0 md:px-8">
       {/* Animated background */}
-      <div className="fixed inset-0 w-full -z-10">
-        <div className="absolute inset-0 w-full bg-gradient-to-r from-[#0A192F] via-[#112240] to-[#0A192F] opacity-80"></div>
-        <div className="absolute inset-0 w-full bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
+      <div className="fixed inset-0 w-screen -z-10">
+        <div className="absolute inset-0 w-screen bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 animate-gradient-x"></div>
+        <div className="absolute inset-0 w-screen bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
         
         {/* Stars */}
-        <div className="stars-container w-full">
+        <div className="stars-container w-screen">
           {[...Array(50)].map((_, i) => (
             <div 
               key={i} 
@@ -29,17 +29,17 @@ const HeroSection = () => {
       </div>
       
       <div className="w-full max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="space-y-6 text-center md:text-left order-2 md:order-1">
-            <div className="space-y-3">
-              <p className="text-white text-xl md:text-2xl font-bold font-poppins">
-                Hello <span className="inline-block animate-wave origin-[70%_70%] text-yellow-400">👋</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-4 text-center md:text-left order-2 md:order-1">
+            <div className="space-y-2">
+              <p className="text-white text-2xl md:text-3xl font-bold font-poppins">
+                Hello <span className="inline-block animate-wave origin-[70%_70%]">👋</span>
               </p>
-              <h1 className="text-3xl md:text-5xl font-bold font-poppins mb-2">
-                I am <span className="bg-gradient-to-r from-[#64FFDA] to-[#00B4D8] bg-clip-text text-transparent">Venkatesh</span>
+              <h1 className="text-4xl md:text-6xl font-bold font-poppins mb-2">
+                I am <span className="text-primary">Venkatesh</span>
               </h1>
             </div>
-            <div className="h-16">
+            <div className="h-20">
               <TypeAnimation
                 sequence={[
                   'a ',
@@ -57,7 +57,7 @@ const HeroSection = () => {
                 ]}
                 wrapper="span"
                 speed={50}
-                className="text-lg md:text-xl font-poppins text-[#64FFDA]"
+                className="text-xl md:text-2xl font-poppins gradient-text"
                 repeat={Infinity}
                 style={{
                   display: 'inline-block'
@@ -65,33 +65,28 @@ const HeroSection = () => {
                 cursor={true}
               />
             </div>
-            <p className="text-sm md:text-base text-[#8892B0] font-poppins -mt-2">
+            <p className="text-base md:text-lg text-secondary font-poppins -mt-2">
               Passionate about creating beautiful and functional web applications with a focus on user experience and modern technologies.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 sm:gap-6 mt-6">
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto font-poppins px-8 bg-[#64FFDA] text-[#0A192F] hover:bg-[#64FFDA]/90 transition-all duration-300"
-              >
-                View Resume
-              </Button>
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 mt-8">
+              <Button size="lg" className="font-poppins px-8">View Resume</Button>
               <div className="flex items-center gap-6">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#64FFDA] hover:text-[#00B4D8] transition-colors">
-                  <Linkedin className="w-5 h-5" />
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">
+                  <Linkedin className="w-6 h-6" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#64FFDA] hover:text-[#00B4D8] transition-colors">
-                  <Instagram className="w-5 h-5" />
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">
+                  <Instagram className="w-6 h-6" />
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-[#64FFDA] hover:text-[#00B4D8] transition-colors">
-                  <Youtube className="w-5 h-5" />
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">
+                  <Youtube className="w-6 h-6" />
                 </a>
               </div>
             </div>
           </div>
           <div className="relative flex justify-center md:justify-end order-1 md:order-2">
-            <div className="relative w-[200px] h-[200px] md:w-[300px] md:h-[300px]">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#64FFDA] via-[#00B4D8] to-[#64FFDA] animate-spin-slow"></div>
-              <div className="absolute inset-[3px] rounded-full bg-[#0A192F]"></div>
+            <div className="relative w-[250px] h-[250px] md:w-[400px] md:h-[400px]">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 animate-spin-slow"></div>
+              <div className="absolute inset-[3px] rounded-full bg-background"></div>
               <img
                 src={profileImage}
                 alt="Profile"
@@ -107,6 +102,24 @@ const HeroSection = () => {
         {`
           .TypeAnimation-module_type-animation__cursor__iDLYk {
             display: none !important;
+          }
+          
+          .gradient-text:nth-of-type(3n + 1) {
+            background: linear-gradient(to right, #EC4899, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          
+          .gradient-text:nth-of-type(3n + 2) {
+            background: linear-gradient(to right, #3B82F6, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          
+          .gradient-text:nth-of-type(3n + 3) {
+            background: linear-gradient(to right, #F59E0B, #EF4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         `}
       </style>
