@@ -39,11 +39,11 @@ const ProjectsSection = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           My Work
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+        <div className="flex flex-col md:flex-row flex-wrap gap-6 justify-center">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-background/50 backdrop-blur-sm rounded-lg overflow-hidden border border-primary/10 hover:border-primary/20 transition-all duration-300"
+              className="w-[352px] group bg-background/50 backdrop-blur-sm rounded-lg overflow-hidden border border-[#0FA0CE]/80 hover:border-primary/20 transition-all duration-300"
             >
               <div className="aspect-video relative">
                 <img
@@ -52,7 +52,7 @@ const ProjectsSection = () => {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="p-4 space-y-3">
+              <div className="p-6 space-y-3">
                 <h3 className="text-lg font-medium font-poppins">{project.title}</h3>
                 <p className="text-sm text-muted-foreground line-clamp-3">
                   {project.description}
@@ -68,7 +68,10 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 <Link to={project.link}>
-                  <Button variant="ghost" className="w-full mt-2 text-sm">
+                  <Button 
+                    variant="ghost" 
+                    className="w-full mt-2 text-sm rounded-[6px] bg-[#0FA0CE]/80 text-white hover:bg-[#0FA0CE]/90"
+                  >
                     View Project
                   </Button>
                 </Link>
