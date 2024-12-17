@@ -103,7 +103,7 @@ const Navbar = ({ scrolled }: { scrolled: boolean }) => {
             </Sheet>
           </div>
 
-          <Button variant="outline" className="gap-2 hidden md:flex">
+          <Button variant="outline" className="gap-2 hidden md:flex border-[#196EF8]/80">
             <Github className="h-4 w-4" />
             GitHub
           </Button>
