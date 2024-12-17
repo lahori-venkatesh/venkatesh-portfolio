@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import { useToast } from "@/components/ui/use-toast";
 
@@ -12,6 +12,11 @@ const ContactSection = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init("user_your_public_key"); // Replace with your actual public key
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -23,6 +28,7 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
+    console.log("Sending email with data:", formData); // Debug log
 
     try {
       const templateParams = {
@@ -32,12 +38,15 @@ const ContactSection = () => {
         message: formData.message,
       };
 
-      await emailjs.send(
+      console.log("Template params:", templateParams); // Debug log
+
+      const response = await emailjs.send(
         'service_8qw6kxj',  // Replace with your EmailJS service ID
         'template_4r3ck4q', // Replace with your EmailJS template ID
-        templateParams,
-        'user_your_public_key' // Replace with your EmailJS public key
+        templateParams
       );
+
+      console.log("EmailJS Response:", response); // Debug log
 
       toast({
         title: "Success!",
