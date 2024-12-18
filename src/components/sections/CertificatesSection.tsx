@@ -6,33 +6,42 @@ const CertificatesSection = () => {
       title: "Advanced React Development",
       organization: "Meta",
       date: "December 2023",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      pdfUrl: "/certificates/meta-react.pdf"
     },
     {
       title: "UI/UX Design Professional",
       organization: "Google",
       date: "October 2023",
-      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      pdfUrl: "/certificates/google-uiux.pdf"
     },
     {
       title: "Full Stack Development",
       organization: "IBM",
       date: "August 2023",
-      image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      pdfUrl: "/certificates/ibm-fullstack.pdf"
     },
     {
       title: "AWS Cloud Practitioner",
       organization: "Amazon",
       date: "July 2023",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      pdfUrl: "/certificates/aws-cloud.pdf"
     },
     {
       title: "Machine Learning Fundamentals",
       organization: "Stanford",
       date: "June 2023",
-      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      pdfUrl: "/certificates/stanford-ml.pdf"
     }
   ];
+
+  const handleCertificateClick = (pdfUrl: string) => {
+    window.open(pdfUrl, '_blank');
+  };
 
   return (
     <section id="certificates" className="my-10">
@@ -44,7 +53,8 @@ const CertificatesSection = () => {
           {certificates.map((cert, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg border border-gradient-to-r from-primary/20 to-accent/20 hover:border-primary/40 transition-all duration-300"
+              className="group relative overflow-hidden rounded-lg border border-gradient-to-r from-primary/20 to-accent/20 hover:border-primary/40 transition-all duration-300 cursor-pointer"
+              onClick={() => handleCertificateClick(cert.pdfUrl)}
             >
               <div className="aspect-video relative">
                 <img
